@@ -12,12 +12,19 @@
         <div dat-role="page" id="homepage">
             <div data-role="main" class="ui-content" >
                 Hello World!
+                <div class="log"></div>
             </div>
         </div>
         <script src="cordova.js" ></script>
         <script src="js/index.js" ></script>
         <script>
             $(document).ready(function () {
+                function myfunction() {
+                    jQuery('.log').html(new Date());
+                }
+
+                setInterval(myfunction, 5000, null);
+
             })
         </script>
     </body>

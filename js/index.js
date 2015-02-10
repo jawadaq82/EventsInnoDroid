@@ -7,6 +7,8 @@ var app = {
     },
     onDeviceReady: function () {
         window.plugins.insomnia.keepAwake(); // sleep mode off
+        window.plugin.backgroundMode.enable();
+
 
     }
 };
